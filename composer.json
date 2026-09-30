@@ -1,0 +1,25 @@
+{
+    "name": "avshotel/litepms-b24-adapter",
+    "description": "Адаптер-прокси: исходящие вебхуки LitePMS -> лиды Bitrix24 (CRM как агрегатор)",
+    "type": "project",
+    "license": "proprietary",
+    "keywords": ["litepms", "bitrix24", "crm", "webhook", "adapter"],
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LitePmsB24\\": "src/"
+        },
+        "files": [
+            "src/env.php"
+        ]
+    },
+    "scripts": {
+        "test": "php tests/run.php"
+    }
+}
